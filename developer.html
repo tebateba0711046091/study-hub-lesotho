@@ -66,42 +66,54 @@
 
 <div id="navbar">
   <center>
-  <a class="active" href="index.html">Schools</a>
-  <a href="developer.html">Developer</a>
+  <a href="index.html">Schools</a>
+  <a  class="active" href="developer.html">Developer</a>
   
   </center>
 </div>
 
 <div id="menu">
   <ul>
-    <li><a href="NUL1.html">National University of Lesotho</a></li>
-    <li><a href="luct.html">Limkokwing University of Creative Technology</a></li>
-    <li><a href="botho.html">Botho University</a></li>
-    <li><a href="nttc.html">Lesotho College of Education</a></li>
-    <li><a href="fokothi.html">Lerotholi Polytechnic </a></li>
-    <li><a href="agric.html">Lesotho Agricultural College</a></li>
 
-
-      <li><a href="scott.html">Scott School of Nursing</a></li>
-    <li><a href="roma.html">Roma College of Nursing</a></li>
-    <li><a href="paray.html">Paray School of Nursing</a></li>
-
-
-    <li><a href="maluti.html">Maluti Adventist College</a></li>
-    <li><a href="nhtc.html">National Health Trainning College</a></li>
-    <li><a href="lipam.html">LIPAM</a></li>
-    <li><a href="idm.html">Institute of Development Management</a></li>
-
-
-    <li><a href="cas.html">Centre of Accounting Studies</a></li>
-    <li><a href="bokamoso.html">Bokamoso College of Technology</a></li>
-    <li><a href="ecol.html">ECOL</a></li>
-    <li><a href="nmds.html">NMDS</a></li>
+    <li><a href="">Name: Khauta</a></li>
+    <li><a href="">Surname: Teba-Teba</a></li>
+    <li><a href="">Course: BSc in Information Technology</a></li>
+    <li><a href="">School: Limkokwing University</a></li>
     
     
+
+
+    <li><a href="">Number: +266 56782467</a></li>
+    <li><a href="">Email: tebatebalimkokwing@gmail.com</a></li>
+    <li><a href="">Page: Tech for Tech</a></li>
+
+ <center><img src="5.jpg" width="300" height="300"></center>
+    
+    
+   <li><a href="">App is trial for three months, is App helpful?</a></li>
+   <li><a href="">Like And Comment stright to one of my contacts</a></li>
+   
   </ul>
 </div>
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = " " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "";
+  }
+}
+</script>
+</head>
 
+
+<p><button onclick="clickCounter()" type="button"><img src="8.png" width="30" height="30"></button></p>
+<div id="result"></div>
 <script>
 window.onscroll = function() {myFunction()};
 
